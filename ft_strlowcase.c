@@ -12,8 +12,6 @@
 
 #include <unistd.h>
 
-char	*ft_strlowcase(char *str);
-
 char	*ft_strlowcase(char *str)
 {
 	int	count;
@@ -27,23 +25,7 @@ char	*ft_strlowcase(char *str)
 			count++;
 		}
 		else
-		{
 			count++;
-		}
 	}
 	return (str);
 }
-/*
-int	main(void)
-{
-	char	arr[] = "heLLo";
-	char	arr2[] = "HELLO";
-
-	printf("%s\n", arr);
-	printf("%s\n", arr2);
-	ft_strlowcase(arr);
-	ft_strlowcase(arr2);
-	printf("%s\n", arr);
-	printf("%s\n", arr2);
-}
-*/
