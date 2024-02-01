@@ -12,17 +12,13 @@
 
 #include <unistd.h>
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size);
-
 int	ft_strlen(char *str)
 {
 	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
-	{
 		i++;
-	}
 	return (i);
 }
 
@@ -44,17 +40,3 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	}
 	return (src_length);
 }
-/*
-int	main(void)
-{
-	char src[] = "";
-	char dest[20];
-	int i;
-	int j;
-
-	i = ft_strlcpy(dest, src, 0);
-	j = strlcpy(dest, src, 0);
-	printf("ft_strlcpy: %d\nstrlcpy: %d", i, j);
-	return (0);
-}
-*/
