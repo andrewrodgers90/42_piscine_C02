@@ -12,8 +12,6 @@
 
 #include <unistd.h>
 
-char	*ft_strcpy(char *dest, char *src);
-
 char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
@@ -27,13 +25,3 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-int	main(void)
-{
-	char	source[] = "Hello there";
-	char	destination[12];
-	ft_strcpy(destination, source);
-	printf("%s", destination);
-	return (0);
-}
-*/
