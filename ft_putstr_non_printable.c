@@ -19,26 +19,9 @@ void	ft_putchar(char c)
 
 int	ft_printable(char c)
 {
-	int	printable;
-
-	printable = 0;
 	if (c >= 32 && c <= 126)
-	{
-		printable = 1;
-	}
-	return (printable);
-}
-
-int	ft_non_printable(char c)
-{
-	int	non_printable;
-
-	non_printable = 0;
-	if (!(c >= 32 && c <= 126))
-	{
-		non_printable = 1;
-	}
-	return (non_printable);
+		return (1);
+	return (0);
 }
 
 void	ft_convert_to_hex(char c)
@@ -62,21 +45,10 @@ void	ft_putstr_non_printable(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] <= 31 || str[i] == 127)
-		{
-			ft_convert_to_hex(str[i]);
-		}
-		else
-		{
+		if (ft_printable(str[i])
 			ft_putchar(str[i]);
-		}
+		else
+			ft_convert_to_hex(str[i]);
 		i++;
 	}
 }
-/*
-int	main(void)
-{
-	char	*arr = "Hello\ngood\tmorning\vto\ryou";
-	ft_putstr_non_printable(arr);
-	return (0);
-}*/
