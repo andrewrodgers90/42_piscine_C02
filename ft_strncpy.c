@@ -12,8 +12,6 @@
 
 #include <unistd.h>
 
-char	*ft_strncpy(char *dest, char *src, unsigned int n);
-
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
 	int	i;
@@ -33,14 +31,3 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-/*
-int	main(void)
-{
-	int	n = 15;
-	char	source[] = "Hello there";
-	char	destination[15];
-	ft_strncpy(destination, source, n);
-	printf("Destination: %s\n", destination);
-	return (0);
-}
-*/
