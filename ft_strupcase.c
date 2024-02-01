@@ -20,20 +20,8 @@ char	*ft_strupcase(char *str)
 	while (str[count] != '\0')
 	{
 		if ((str[count] >= 'a') && (str[count] <= 'z'))
-		{
 			str[count] -= 32;
-		}
 		count++;
 	}
 	return (str);
 }
-/*
-int	main(void)
-{
-	char	arr[] = "helloHELLO8934HELLOhello7534@#$#asd$^%$#";
-
-	printf("%s\n", arr);
-	ft_strupcase(arr);
-	printf("%s\n", arr);
-	return (0);
-}*/
